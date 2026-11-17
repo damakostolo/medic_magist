@@ -1,0 +1,35 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Dependencies, caches and build output
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+node_modules/
+/frontend/dist/
+*.pyc
+*.tsbuildinfo
+
+# Local databases and downloaded research data
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+/ml/data/
+
+# Local editor and operating system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+.codex/
+
+# Thesis handoff packages and local collection scripts
+/docs/thesis_evidence/
+/medinsight_thesis_evidence.zip
+/medinsight_thesis_visuals.zip
+/scripts/collect_thesis_evidence.py
+/scripts/capture_thesis_visuals.py

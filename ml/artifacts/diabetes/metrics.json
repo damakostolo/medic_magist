@@ -1,0 +1,86 @@
+{
+  "scenario": "diabetes",
+  "dataset": "Ознаки ранньої стадії діабету",
+  "dataset_id": 529,
+  "source_url": "https://archive.ics.uci.edu/static/public/529/early+stage+diabetes+risk+prediction+dataset.zip",
+  "archive_sha256": "67594c0f11257688b57493798e70737b7156ba37a2e6ac75507ae3a35221a388",
+  "license": "CC BY 4.0",
+  "version": "diabetes-67594c0f1125-s42",
+  "trained_at_utc": "2026-11-10T17:12:36.839069+00:00",
+  "seed": 42,
+  "source_rows": 520,
+  "duplicates_removed": 269,
+  "source_class_counts": {
+    "0": 200,
+    "1": 320
+  },
+  "rows": 251,
+  "train_rows": 200,
+  "test_rows": 51,
+  "features": [
+    "age",
+    "gender",
+    "polyuria",
+    "polydipsia",
+    "sudden_weight_loss",
+    "weakness",
+    "polyphagia",
+    "genital_thrush",
+    "visual_blurring",
+    "itching",
+    "irritability",
+    "delayed_healing",
+    "partial_paresis",
+    "muscle_stiffness",
+    "alopecia",
+    "obesity"
+  ],
+  "missing_by_feature": {
+    "age": 0,
+    "gender": 0,
+    "polyuria": 0,
+    "polydipsia": 0,
+    "sudden_weight_loss": 0,
+    "weakness": 0,
+    "polyphagia": 0,
+    "genital_thrush": 0,
+    "visual_blurring": 0,
+    "itching": 0,
+    "irritability": 0,
+    "delayed_healing": 0,
+    "partial_paresis": 0,
+    "muscle_stiffness": 0,
+    "alopecia": 0,
+    "obesity": 0
+  },
+  "class_counts": {
+    "0": 78,
+    "1": 173
+  },
+  "algorithm": "Random Forest",
+  "parameters": {
+    "model__max_depth": 10,
+    "model__n_estimators": 200
+  },
+  "cv_roc_auc": 0.9759768009768008,
+  "threshold": 0.5,
+  "test_metrics": {
+    "accuracy": 0.9215686274509803,
+    "precision": 1.0,
+    "recall": 0.8857142857142857,
+    "specificity": 1.0,
+    "f1": 0.9393939393939394,
+    "roc_auc": 0.9642857142857143,
+    "brier": 0.08028741172580144,
+    "confusion_matrix": [
+      [
+        16,
+        0
+      ],
+      [
+        4,
+        31
+      ]
+    ]
+  }
+}

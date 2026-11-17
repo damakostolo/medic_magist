@@ -1,0 +1,79 @@
+{
+  "scenario": "heart",
+  "dataset": "Ознаки серцевого захворювання",
+  "dataset_id": 45,
+  "source_url": "https://archive.ics.uci.edu/static/public/45/heart+disease.zip",
+  "archive_sha256": "b17cd273da9ce1caa4710fce80227ea454d4dbf9fcbc8e6a9121672751563adc",
+  "license": "CC BY 4.0",
+  "version": "heart-b17cd273da9c-s42",
+  "trained_at_utc": "2026-11-10T17:12:20.298713+00:00",
+  "seed": 42,
+  "source_rows": 303,
+  "duplicates_removed": 0,
+  "source_class_counts": {
+    "0": 164,
+    "1": 139
+  },
+  "rows": 303,
+  "train_rows": 242,
+  "test_rows": 61,
+  "features": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "missing_by_feature": {
+    "age": 0,
+    "sex": 0,
+    "cp": 0,
+    "trestbps": 0,
+    "chol": 0,
+    "fbs": 0,
+    "restecg": 0,
+    "thalach": 0,
+    "exang": 0,
+    "oldpeak": 0,
+    "slope": 0,
+    "ca": 4,
+    "thal": 2
+  },
+  "class_counts": {
+    "0": 164,
+    "1": 139
+  },
+  "algorithm": "Logistic Regression",
+  "parameters": {
+    "model__C": 1
+  },
+  "cv_roc_auc": 0.9024931590148981,
+  "threshold": 0.5,
+  "test_metrics": {
+    "accuracy": 0.8852459016393442,
+    "precision": 0.8387096774193549,
+    "recall": 0.9285714285714286,
+    "specificity": 0.8484848484848485,
+    "f1": 0.8813559322033898,
+    "roc_auc": 0.9664502164502166,
+    "brier": 0.0797434422945341,
+    "confusion_matrix": [
+      [
+        28,
+        5
+      ],
+      [
+        2,
+        26
+      ]
+    ]
+  }
+}
